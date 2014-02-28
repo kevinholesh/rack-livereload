@@ -86,7 +86,7 @@ module Rack
       end
 
       def host_to_use
-        (@options[:host] || @env['HTTP_HOST'] || 'localhost').gsub(%r{:.*}, '')
+        (@options[:host] || @env['HTTP_HOST'] || 'localhost')
       end
 
       def template
